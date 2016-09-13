@@ -1,58 +1,3 @@
-body {   
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.15);
-    
-    
-    background: linear-gradient(270deg, #145041, #342466, #1e3f76, #572463);
-    background-size: 1400% 1400%;
-
-    -webkit-animation: gradColor 50s ease infinite;
-    -moz-animation: gradColor 50s ease infinite;
-    animation: gradColor 50s ease infinite;  
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {   
-    text-decoration: line-through;
-}
-
-.rangee {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 40%;   
-    transform: translateY(-50%);
-}
-
-.nom {
-    text-transform: uppercase;               
-    font-weight: 700;                
-}
-
-.relier {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;    
-}
-
-.relier a {    
-    margin: 10px;
-    display: block;
-    float: left;
-    width: 50px;
-    height: 50px;
-}
-
-.relier a:hover {
-    /*color: rgba(255, 255, 255, 0.7);*/    
-    font-size: 105%;
-}
 
 @-webkit-keyframes gradColor {
     0%{background-position:0% 99%}
@@ -70,3 +15,91 @@ a:hover {
     100%{background-position:0% 99%}
 }
 
+body {   
+    /*font-family: 'Montserrat', sans-serif;*/    
+    font-family: 'Open Sans', sans-serif;
+
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.15);
+    
+    
+    background: linear-gradient(270deg, #145041, #342466, #1e3f76, #572463);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: gradColor 50s ease infinite;
+    -moz-animation: gradColor 50s ease infinite;
+    animation: gradColor 50s ease infinite;  
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;               
+    font-weight: 700;                
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {   
+    text-decoration: line-through;
+}
+
+
+@media only screen and (min-width: 320px) {
+    
+    .rangee {
+        width: 100%;
+        text-align: center;        
+    }
+
+    .relier {
+        margin-top: 40px;        
+        width: 100%;    
+    }
+
+    .relier a {
+        font-size: 45px;             
+        display: block;
+        float: left;
+        width: 50%;
+        height: 28%;
+    }
+
+    .relier a:hover {
+        color: rgba(255, 255, 255, 0.7);            
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .relier {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;    
+    }
+
+    .relier a {    
+        font-size: inherit;
+        margin: 10px;
+        display: block;
+        float: left;
+        width: 50px;
+        height: 50px;
+    }
+
+    .relier a:hover {
+        color: inherit;
+        font-size: 105%;            
+    }
+
+    .rangee {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 40%;   
+        transform: translateY(-50%);
+    }
+}
