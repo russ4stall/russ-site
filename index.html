@@ -9,19 +9,22 @@
     <link href="ressources/stylez.css" rel="stylesheet">        
 </head>
 <body>
-    <div class="container">
+    <div class="recipient">
         <div class="rangee">
-            <h1 class="nom">Russ F<span class="forstall-o">o</span>rstall</h1>
+            <h1 class="nom">
+                Russ F<span class="forstall-o">o</span><i class='fa fa-rebel forstall-o' style="display: none"></i>rstall
+            </h1>
             <p class="la-description">
                 Full stack software developer located in <a href="https://www.reddit.com/r/FloridaMan/">The Real Florida</a>.
             </p>    
             <div class="relier">
                 <a href="https://github.com/russ4stall"><i class="fa fa-github fa-2x"></i></a>                
                 <a href="https://www.instagram.com/russ4stall/"><i class="fa fa-instagram fa-2x"></i></a>                
-                <a href="mailto:russ4stall@gmail.com?subject=Let's Talk"><i class="fa fa-envelope-o fa-2x"></i></a>              
+                <a class="mail-link" href=""><i class="fa fa-envelope-o fa-2x"></i></a>              
                 <a href="https://www.linkedin.com/in/russ-forstall-43131792"><i class="fa fa-linkedin-square fa-2x"></i></a>                            
             </div>
         </div>
+        
     </div>    
     <script>
         $(document).ready(function () {
@@ -32,8 +35,14 @@
             });
 
             $(".forstall-o").click(function () {
-                $(this).html("<i class='fa fa-rebel'></i>");
+                $(".forstall-o").toggle();
             })    
+
+            $('.mail-link').on('click', function (event) {
+                event.preventDefault();
+                var femail = "russ".concat("4stall").concat("@gma").concat("il.com");                              
+                window.location = "mailto:" + femail + "?subject=Hey Russ!";
+            });
         });            
     </script>
 </body>

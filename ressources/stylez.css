@@ -42,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+.forstall-o:hover {
+    cursor: vertical-text;
+}
+
 a:hover {   
     text-decoration: line-through;
 }
