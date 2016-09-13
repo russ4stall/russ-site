@@ -1,0 +1,34 @@
+<html>
+<head>
+    <script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+    <script src="ressources/jquery.fittext.js"></script>    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="ressources/stylez.css" rel="stylesheet">        
+</head>
+<body>
+    <div class="recipient">
+        <div class="rangee">
+            <h1 class="nom">Russ Forstall</h1>
+            <p class="la-description">
+                Full stack software developer located in <a href="https://www.reddit.com/r/FloridaMan/">The Real Florida</a>.
+            </p>    
+            <div class="relier">
+                <a href="https://github.com/russ4stall"><i class="fa fa-github fa-2x"></i></a>                
+                <a href="https://www.instagram.com/russ4stall/"><i class="fa fa-instagram fa-2x"></i></a>                
+                <a href="mailto:myemail@gmail.com?subject=Let's Talk"><i class="fa fa-envelope-o fa-2x"></i></a>              
+                <a href="https://www.linkedin.com/in/russ-forstall-43131792"><i class="fa fa-linkedin-square fa-2x"></i></a>                            
+            </div>
+        </div>
+    </div>    
+    <script>
+        $(document).ready(function () {
+            $(".nom").fitText(1.2, 
+            {
+                minFontSize: '35px',
+                maxFontSize: '65px'
+            });    
+        });            
+    </script>
+</body>
+</html>
