@@ -42,6 +42,7 @@ a {
     text-decoration: none;
 }
 
+
 .forstall-o:hover {
     cursor: vertical-text;
 }
@@ -52,7 +53,13 @@ a:hover {
 
 
 @media only screen and (min-width: 320px) {
-    
+    .fa-rebel.forstall-o {
+        position: relative;
+        top: -4px;
+        font-size: 78%;
+        padding: 0.03em;
+    }
+
     .rangee {
         width: 100%;
         text-align: center;        
@@ -73,11 +80,15 @@ a:hover {
 
     .relier a:hover {
         color: rgba(255, 255, 255, 0.7);            
-    }
-    
+    }    
 }
 
 @media only screen and (min-width: 768px) {
+    
+    .fa-rebel.forstall-o {        
+        top: -5px;        
+    }
+    
     .relier {
         margin-top: 40px;
         margin-left: auto;
