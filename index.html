@@ -12,7 +12,7 @@
     <div class="recipient">
         <div class="rangee">
             <h1 class="nom">
-                Russ F<span class="forstall-o">o</span><i class='fa fa-rebel forstall-o' style="display: none"></i>rstall
+                R<span class="forstall-u">u</span><i class='fa fa-rebel forstall-u o-boi' style="display: none"></i>ss F<span class="forstall-o">o</span><i class='fa fa-empire forstall-o o-boi' style="display: none"></i>rstall
             </h1>
             <p class="la-description">
                 Full stack software developer located in <a href="https://www.reddit.com/r/FloridaMan/">The Real Florida</a>.
@@ -25,8 +25,18 @@
             </div>
         </div>
         
-    </div>    
+    </div>       
+
     <script>
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-84185304-1', 'auto');
+        ga('send', 'pageview');
+
+
         $(function () {
             $(".nom").fitText(1.2, 
             {
@@ -37,6 +47,10 @@
             $(".forstall-o").click(function () {
                 $(".forstall-o").toggle();
             })    
+
+            $(".forstall-u").click(function () {
+                $(".forstall-u").toggle();
+            })
 
             $('.mail-link').on('click', function (event) {
                 event.preventDefault();

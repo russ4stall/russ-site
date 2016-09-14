@@ -43,7 +43,7 @@ a {
 }
 
 
-.forstall-o:hover {
+.forstall-u, .forstall-o:hover {
     cursor: vertical-text;
 }
 
@@ -51,9 +51,18 @@ a:hover {
     text-decoration: line-through;
 }
 
+.recipient {
+    margin-top: 20px;
+}
 
 @media only screen and (min-width: 320px) {
-    .fa-rebel.forstall-o {
+    .o-boi.forstall-u {
+        position: relative;
+        top: -4px;
+        font-size: 75%;        
+    }
+
+    .o-boi.forstall-o {
         position: relative;
         top: -4px;
         font-size: 78%;
@@ -85,10 +94,18 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
     
-    .fa-rebel.forstall-o {        
+    .o-boi {        
         top: -5px;        
-    }
+    }    
     
+    .rangee {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;   
+        transform: translateY(-50%);
+    }
+
     .relier {
         margin-top: 40px;
         margin-left: auto;
@@ -108,13 +125,5 @@ a:hover {
     .relier a:hover {
         color: inherit;
         font-size: 105%;            
-    }
-
-    .rangee {
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 40%;   
-        transform: translateY(-50%);
     }
 }
